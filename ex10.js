@@ -19,17 +19,5 @@ pointArr.sort((a,b) => {
 
 console.log(pointArr)
 
-// for (const pointArrElement of pointArr) {
-//     console.log(pointArrElement)
-//
-//     //target과 pointArrElement의 거리 계산
-//     const distance = Math.sqrt(
-//         Math.pow( pointArrElement.xpos - target.xpos  ,2) +
-//         Math.pow(pointArrElement.ypos - target.ypos,2 ) )
-//
-//     console.log(distance)
-//
-// }
-
 
 
