@@ -13,13 +13,14 @@ const kissCut = parseInt(readlineSync.question("Kiss COUNT"))
 const target = {action: actionCut, kiss: kissCut} //반지의 제왕
 
 
-movies.sort((a,b) => {
-
+function calcDistance(a, b){
     const disA = Math.sqrt(Math.pow(a.action - target.action , 2) + Math.pow( a.kiss - target.kiss , 2 ) )
     const disB = Math.sqrt(Math.pow(b.action - target.action , 2) + Math.pow( b.kiss - target.kiss , 2 ) )
 
     return disA - disB > 0 ? 1: -1
-})
+}
+
+movies.sort(calcDistance)
 
 
 console.log(movies)
